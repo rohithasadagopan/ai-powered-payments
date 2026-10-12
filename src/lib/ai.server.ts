@@ -23,7 +23,7 @@ export type Recommendation = {
 };
 
 export async function recommendProducts(query: string, budget: number | null): Promise<Recommendation> {
-  const apiKey = process.env.LOVABLE_API_KEY;
+  const apiKey = process.env["LOVABLE_API_KEY"];
   if (!apiKey) throw new Error("AI is not configured (missing LOVABLE_API_KEY).");
 
   const provider = createOpenAI({

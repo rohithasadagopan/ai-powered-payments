@@ -5,8 +5,8 @@ const PAYPAL_API = "https://api-m.sandbox.paypal.com";
 export type CartLine = { id: string; qty: number };
 
 function creds() {
-  const id = process.env.PAYPAL_CLIENT_ID;
-  const secret = process.env.PAYPAL_CLIENT_SECRET;
+  const id = process.env["PAYPAL_CLIENT_ID"];
+  const secret = process.env["PAYPAL_CLIENT_SECRET"];
   if (!id || !secret) throw new Error("PayPal is not configured. Add PAYPAL_CLIENT_ID and PAYPAL_CLIENT_SECRET.");
   return { id, secret };
 }
@@ -88,5 +88,5 @@ export async function capturePaypalOrder(orderId: string) {
 }
 
 export function paypalClientId() {
-  return process.env.PAYPAL_CLIENT_ID ?? null;
+  return process.env["PAYPAL_CLIENT_ID"] ?? null;
 }
