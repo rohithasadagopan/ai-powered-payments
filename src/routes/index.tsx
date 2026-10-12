@@ -87,7 +87,7 @@ function Index() {
 
       <section className="relative mx-auto max-w-6xl overflow-hidden rounded-2xl px-6">
         <div className="relative overflow-hidden rounded-2xl">
-          <img src={hero} alt="Curated everyday products on linen" width={1600} height={1008} className="h-[540px] w-full object-cover sm:h-[420px]" />
+          <img src={hero} alt="Curated everyday products on linen" width={1600} height={1008} className="h-[420px] w-full object-cover" />
           <div aria-hidden className="pointer-events-none absolute inset-0 bg-gradient-to-b from-background/95 via-background/88 to-background/70 sm:bg-gradient-to-r sm:from-background/92 sm:via-background/72 sm:to-background/15" />
           <div className="relative flex h-full flex-col justify-center gap-5 p-8 md:p-12">
             <h1 className="max-w-lg font-display text-5xl leading-[1.05] md:text-6xl">
