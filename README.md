@@ -20,6 +20,17 @@ Describe what you need in plain words ("a birthday gift for a coffee-loving frie
 
 Code: `src/lib/paypal.server.ts`, `src/components/PayPalCheckout.tsx`, `src/lib/shop.functions.ts`.
 
+## Screenshots
+
+| | |
+|---|---|
+| ![The shop and the question box](docs/media/hero-desktop.jpg) | ![AI picks with reasons](docs/media/ai-picks.jpg) |
+| Cart with AI picks added | AI picks, each with a reason and a running total |
+
+| | |
+|---|---|
+| ![Phone view](docs/media/phone.jpg) | ![Cover art](docs/media/cover.jpg) |
+
 ## AI tools used
 - **Lovable AI Gateway** with the **OpenAI `gpt-6-astra`** model via the **Vercel AI SDK** (`ai`, `@ai-sdk/openai`, Responses API).
 - The model receives the product catalog + the shopper's request and budget, and returns JSON picks with reasons. The server validates every product ID and enforces the budget. Code: `src/lib/ai.server.ts`.
