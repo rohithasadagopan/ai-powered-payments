@@ -5,3 +5,4 @@
 - [x] Devpost form answers
 - [ ] PayPal sandbox keys (waiting on user)
 - [ ] GitHub repo + YouTube video (user does these)
+- [ ] Working demo link: publish app so judges can open it (in progress)
